@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Halloween</string>
+    <string name="next">Seguinte</string>
+    <string name="name">Escribe o teu nome</string>
+    <string name="nome">Introduce o teu nome aquí</string>
+    <string name="theme">Selecciona unha temática</string>
+    <string name="bruxas">Aquelarre de bruxas</string>
+    <string name="casa">Casa encantada</string>
+    <string name="bosque">Bosque maldito</string>
+    <string name="volver">Volver</string>
+</resources>
