@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">PracticaFragments</string>
+    <string name="discover">Discover the garlic soup!</string>
+    <string name="next">Seguinte</string>
+    <string name="finish">Finalizar</string>
+    <string name="bottles">Blow and make bottles!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="image_description">Tarxeta de embarque</string>
+    <string name="image_description2">fotos</string>
+</resources>
