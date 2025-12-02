@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:text="@string/text_calculation"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:paddingBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/distancia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_distance"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <EditText
+        android:id="@+id/tempo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_time"
+        android:inputType="numberDecimal"
+        android:padding="12dp"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/edit_text"/>
+
+    <TextView
+        android:id="@+id/txtSpeedKmH"
+        android:text="@string/result_kmh"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/txtSpeedMS"
+        android:text="@string/result_ms"
+        android:textSize="20sp"
+        android:paddingBottom="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

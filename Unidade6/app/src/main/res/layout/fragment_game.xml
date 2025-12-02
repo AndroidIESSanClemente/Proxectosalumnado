@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txt_word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.2"
+        android:textSize="35sp"/>
+
+    <!-- Cantas vidas nos quedan -->
+    <TextView
+        android:id="@+id/txt_lives"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:letterSpacing="0.2"
+        android:textSize="16sp"/>
+
+    <!-- Introducir letras -->
+    <EditText
+        android:id="@+id/txt_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLength="1"
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"
+        android:hint="@string/letter"/>
+
+    <!-- Botón seguinte -->
+    <Button
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/start"
+        android:layout_marginTop="16dp" />
+
+</LinearLayout>

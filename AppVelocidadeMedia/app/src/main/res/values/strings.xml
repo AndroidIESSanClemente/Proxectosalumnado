@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">AppVelocidadeMedia</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="speed_calculator">Calculadora de Velocidade Media</string>
+    <string name="hint_distance">Distancia (km)</string>
+    <string name="hint_time">Tempo (horas)</string>
+    <string name="result">Obter resultado</string>
+    <string name="speed_ms">m/s</string>
+    <string name="speed_kmh">km/h</string>
+    <string name="new_calculation">Novo cálculo</string>
+    <string name="results">Resultados</string>
+</resources>

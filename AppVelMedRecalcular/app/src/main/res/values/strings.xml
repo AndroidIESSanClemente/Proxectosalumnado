@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppVelMedRecalcular</string>
+    <string name="text_calculation">Calculadora de Velocidade Media</string>
+    <string name="hint_distance">Distancia (km)</string>
+    <string name="hint_time">Tempo (horas)</string>
+    <string name="result_kmh">Velocidade en km/h:</string>
+    <string name="result_ms">Velocidade en m/s:</string>
+</resources>
