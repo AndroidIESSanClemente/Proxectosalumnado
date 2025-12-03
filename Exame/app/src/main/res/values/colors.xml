@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Cores primarias e de marca -->
+    <color name="colorPrimary">#009688</color>
+    <color name="colorPrimaryDark">#00796B</color>
+
+    <!-- Cor de fondo xeral da app -->
+    <color name="colorBackground">#FAF9F6</color>
+
+    <!-- Cor secundaria ou de superficie -->
+    <color name="colorSurface">#E0F2F1</color>
+
+</resources>

@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Exame</string>
+    <string name="place_order">Realizar pedido</string>
+    <string name="hint_name">O teu nome</string>
+    <string name="hint_mail">O teu correo electrónico</string>
+    <string name="text_order">Introduce os seguintes datos para finalizar o teu pedido:</string>
+    <string name="radio_estandar">Estándar</string>
+    <string name="radio_certificado">Certificado</string>
+    <string name="radio_urxente">Urxente</string>
+    <string name="button_endorder">Finalizar pedido</string>
+    <string name="menu_perfil">Perfil de usuario</string>
+    <string name="menu_order">Pedido</string>
+    <string name="pedido7">Xersei - Cantidade: 1</string>
+    <string name="pedido1">Zapatillas - Cantidade: 2</string>
+    <string name="pedido2">Camisetas - Cantidade: 3</string>
+    <string name="pedido3">Abrigo - Cantidade: 1</string>
+    <string name="pedido4">Pantalón - Cantidade: 1</string>
+    <string name="pedido5">Calcetíns - Cantidade: 4</string>
+    <string name="pedido6">Bufanda - Cantidade: 1</string>
+</resources>
