@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AppTarefas</string>
+    <string name="hint_name">Nome da tarefa</string>
+    <string name="button_add">Engadir tarefa</string>
+    <string name="text_task">Engadir unha nova tarefa</string>
+    <string name="priority">Prioridade</string>
+    <string name="text_summary">Resumo de tarefas</string>
+</resources>
