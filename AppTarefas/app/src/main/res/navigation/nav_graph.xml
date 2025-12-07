@@ -9,11 +9,7 @@
         android:id="@+id/addFragment"
         android:name="com.example.apptarefas.AddFragment"
         android:label="fragment_add"
-        tools:layout="@layout/fragment_add" >
-        <action
-            android:id="@+id/action_addFragment_to_listFragment"
-            app:destination="@id/listFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.apptarefas.SummaryFragment"
@@ -23,9 +19,5 @@
         android:id="@+id/listFragment"
         android:name="com.example.apptarefas.ListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" >
-        <action
-            android:id="@+id/action_listFragment_to_summaryFragment"
-            app:destination="@id/summaryFragment" />
-    </fragment>
+        tools:layout="@layout/fragment_list" />
 </navigation>
