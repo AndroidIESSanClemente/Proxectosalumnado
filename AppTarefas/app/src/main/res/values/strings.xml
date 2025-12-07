@@ -5,4 +5,19 @@
     <string name="text_task">Engadir unha nova tarefa</string>
     <string name="priority">Prioridade</string>
     <string name="text_summary">Resumo de tarefas</string>
+    <string name="text_low">Baixa</string>
+    <string name="text_medium">Media</string>
+    <string name="text_high">Alta</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="done">Feita</string>
+    <string name="list">Lista</string>
+    <string name="add">Engadir</string>
+    <string name="summary">Resumo</string>
+    <string name="final_text_priority">Prioridade</string>
+    <string name="text_completed">Completadas: 0</string>
+    <string name="text_totaltasks">Total tarefas: 0</string>
+    <string name="text_low_priority">Con prioridade baixa: 0</string>
+    <string name="text_medium_priority">Con prioridade media: 0</string>
+    <string name="text_high_priority">Con prioridade alta: 0</string>
 </resources>

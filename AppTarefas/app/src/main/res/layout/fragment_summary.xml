@@ -1,27 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".SummaryFragment">
 
-      <androidx.constraintlayout.widget.ConstraintLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:padding="16dp">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
 
-          <TextView
-              android:id="@+id/text_summary"
-              android:layout_width="wrap_content"
-              android:layout_height="wrap_content"
-              android:text="@string/text_summary"
-              android:textSize="24sp"
-              android:textStyle="bold"
-              app:layout_constraintTop_toTopOf="parent"
-              app:layout_constraintStart_toStartOf="parent"/>
+            <TextView
+                android:id="@+id/text_summary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_summary"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
 
-      </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/text_total_tasks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_totaltasks"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/text_summary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
 
-  </ScrollView>
+            <TextView
+                android:id="@+id/text_total_completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_completed"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/text_total_tasks"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/text_total_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_low_priority"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/text_total_completed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/text_total_medium"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_medium_priority"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/text_total_low"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/text_total_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_high_priority"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/text_total_medium"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="16dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>

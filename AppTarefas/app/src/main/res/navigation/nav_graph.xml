@@ -8,16 +8,18 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.apptarefas.AddFragment"
-        android:label="fragment_add"
-        tools:layout="@layout/fragment_add" />
-    <fragment
-        android:id="@+id/summaryFragment"
-        android:name="com.example.apptarefas.SummaryFragment"
-        android:label="fragment_summary"
-        tools:layout="@layout/fragment_summary" />
+        android:label="fragment_add">
+    </fragment>
     <fragment
         android:id="@+id/listFragment"
         android:name="com.example.apptarefas.ListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list" >
+    </fragment>
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.apptarefas.SummaryFragment"
+        android:label="fragment_summary">
+    </fragment>
+
 </navigation>
