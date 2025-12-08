@@ -1,7 +1,7 @@
 package com.example.apptarefas;
 
 //Data class que representa unha tarefa
-data class Task (
+data class Task(
     //Nome da tarefa escrita polo usuario
     val name: String,
     //Prioridade seleccionada (Baixa, Media ou Alta)
@@ -11,6 +11,6 @@ data class Task (
 )
 
 //Enumeración que define os tres niveis de prioridade posibles
-enum class Priority{
+enum class Priority {
     Baixa, Media, Alta
 }

@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
+//Créase unha clase que herda da clase ViewModel
 class TaskViewModel : ViewModel() {
 
     //LiveData que contén unha lista de tarefas

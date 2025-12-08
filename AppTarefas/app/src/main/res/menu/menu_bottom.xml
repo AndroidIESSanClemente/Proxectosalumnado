@@ -3,17 +3,17 @@
 
     <item
         android:id="@+id/addFragment"
-        android:title="@string/add"
-        android:icon="@drawable/outline_add_24" />
+        android:icon="@drawable/outline_add_24"
+        android:title="@string/add" />
 
     <item
         android:id="@+id/listFragment"
-        android:title="@string/list"
-        android:icon="@drawable/outline_assignment_24" />
+        android:icon="@drawable/outline_assignment_24"
+        android:title="@string/list" />
 
     <item
         android:id="@+id/summaryFragment"
-        android:title="@string/summary"
-        android:icon="@drawable/outline_fact_check_24" />
+        android:icon="@drawable/outline_fact_check_24"
+        android:title="@string/summary" />
 
 </menu>

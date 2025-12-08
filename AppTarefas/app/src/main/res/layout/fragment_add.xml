@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center_horizontal"
+    android:orientation="vertical"
     android:padding="32dp"
     tools:context=".AddFragment">
 
@@ -14,28 +14,28 @@
         android:id="@+id/text_title_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/text_task"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="16dp"/>
+        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/edit_task_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=""
         android:hint="@string/hint_name"
-        android:inputType="textCapSentences"/>
+        android:inputType="textCapSentences"
+        android:text="" />
 
     <TextView
         android:id="@+id/text_priority"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/priority"
-        android:textStyle="bold"
         android:textSize="20sp"
-        android:layout_marginTop="24dp"/>
+        android:textStyle="bold" />
 
     <com.google.android.material.chip.ChipGroup
         android:id="@+id/chip_group_priority"
@@ -47,27 +47,27 @@
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_low"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_low"
-            android:textSize="20sp"
-            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+            android:textSize="20sp" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_medium"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_medium"
-            android:textSize="20sp"
-            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+            android:textSize="20sp" />
 
         <com.google.android.material.chip.Chip
             android:id="@+id/chip_high"
+            style="@style/Widget.MaterialComponents.Chip.Choice"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/text_high"
-            android:textSize="20sp"
-            style="@style/Widget.MaterialComponents.Chip.Choice"/>
+            android:textSize="20sp" />
 
     </com.google.android.material.chip.ChipGroup>
 
@@ -75,9 +75,9 @@
         android:id="@+id/button_add_task"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
         android:text="@string/button_add"
         android:textSize="20sp"
-        android:textStyle="bold"
-        android:layout_marginTop="24dp" />
+        android:textStyle="bold" />
 
 </LinearLayout>
