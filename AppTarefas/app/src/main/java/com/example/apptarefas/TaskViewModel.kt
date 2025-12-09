@@ -24,7 +24,7 @@ class TaskViewModel : ViewModel() {
         _tasks.value = _tasks.value
     }
 
-    //Métodos para resumo
+    //Métodos para crear o resumo.
     fun totalTasks(): Int = _tasks.value?.size ?: 0
     //Cantas tarefas están marcadas como completadas
     fun totalCompleted(): Int = _tasks.value?.count {it.completed} ?: 0

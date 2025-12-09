@@ -33,6 +33,7 @@ class AddFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         //botón para engadir tarefa
+        // trim() serve para eliminar os espazos en branco ao inicio e ao final dunha cadea de texto
         binding.buttonAddTask.setOnClickListener {
             val name = binding.editTaskName.text.toString().trim()
             if (name.isEmpty()) {

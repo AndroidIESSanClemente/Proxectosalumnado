@@ -1,6 +1,6 @@
 package com.example.apptarefas;
 
-//Data class que representa unha tarefa
+//Data class que representa unha tarefa, só contén datos
 data class Task(
     //Nome da tarefa escrita polo usuario
     val name: String,

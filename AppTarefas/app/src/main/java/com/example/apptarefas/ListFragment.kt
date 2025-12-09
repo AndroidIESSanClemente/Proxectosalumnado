@@ -42,7 +42,7 @@ class ListFragment : Fragment() {
             model.setCompleted(task, checked)
         }
 
-        // Configúrase o RecyclerView:
+        // Configúrase o RecyclerView coa clase LayoutManager:
         // -LayoutManager lineal en vertical
         // -Adapter previamente creado
         binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())

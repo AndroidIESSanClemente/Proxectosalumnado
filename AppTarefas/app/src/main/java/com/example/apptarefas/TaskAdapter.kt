@@ -5,7 +5,8 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.apptarefas.databinding.ItemTaskBinding
 
-//Adapter que se encarga de mostrar a lista de tarefas
+//Adapter que se encarga de mostrar a lista de tarefas en vistas que se mostrarán no Recyclerview
+// Tamén recibe unha función lammbda para avisar cando unha tarefa se marca/desmarca
 class TaskAdapter (
     private var tasks: List<Task>,
     private val onCheckedChanged: (Task, Boolean) -> Unit
@@ -21,30 +22,34 @@ class TaskAdapter (
         return TaskViewHolder(binding)
     }
 
-    //Número de elementos (tamaño da lista)
+    //Número de elementos (tamaño da lista). RecyclerView usa este dato para saber cantos elementos debe mostrar
     override fun getItemCount(): Int = tasks.size
 
-    //Asigna os datos dunha tarefa ás vistas da fila
+    // Este métod chámase cada vez que unha vista (ViewHolder) se mostra na pantalla
+    // Asigna/rechea cada ítem con datos
+    // Como o RecyclerView recicla vista, chámase continuamente
     override fun onBindViewHolder(holder: TaskViewHolder, position: Int) {
         val task = tasks[position]
+        // "with" permite acceder directamente ás vistas do binding
         with (holder.binding){
-            //Mlostrar o nome da tarefa
+            //Mostra o nome da tarefa
             textTask.text = task.name
+            //Mostra a prioridade como texto, .name devolve o nome do enum (Baixa, Media, Alta)
             chipPriority.text = task.priority.name
 
-            // Cambiar cor segundo prioridade
+            // Cambiar a cor do chip segundo a prioridade da tarefa
             val colorRes = when (task.priority) {
                 Priority.Baixa -> R.color.priority_low
                 Priority.Media -> R.color.priority_medium
                 Priority.Alta -> R.color.priority_high
             }
             chipPriority.setChipBackgroundColorResource(colorRes)
-            //Cor do texto do chip
+            //Cor do texto do chip, en branco
             chipPriority.setTextColor(root.context.getColor(R.color.white))
 
-            // Previr que se dispare o listener ao reciclar vistas
+            // Previr que se dispare o listener ao reciclar vistas, para o cal se quita temporalmente o listener
             chipCompleted.setOnCheckedChangeListener(null)
-            // Indicar se a tarefa está completada
+            // Indicar no chip se a tarefa está completada
             chipCompleted.isChecked = task.completed
             // Listener para marcar/desmarcar tarefa
             chipCompleted.setOnCheckedChangeListener { _, checked ->
@@ -56,7 +61,7 @@ class TaskAdapter (
     //Cando cambia a lista, actualízase o adaptador
     fun updateList(newTasks: List<Task>){
         tasks = newTasks
+        //notifícase ao RecyclerView que toda a lista cambiou
         notifyDataSetChanged()
     }
-
 }
