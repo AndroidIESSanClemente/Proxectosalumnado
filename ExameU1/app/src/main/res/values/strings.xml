@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exame</string>
+    <string name="text_save">Gardar</string>
+    <string name="concept">Concepto</string>
+    <string name="quantity">Cantidade</string>
+    <string name="total_amount">Cantidade total gastada: 0.00 €</string>
+    <string name="description_delete_button">Delete Button</string>
+    <string name="text_initial">Introduce os teus gastos:</string>
+    <string name="title_add">Engadir gasto</string>
+    <string name="title_summary">Resumo</string>
+</resources>

@@ -1,17 +1,17 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
-    id("androidx.navigation.safeargs") version "2.9.6" apply false
+    id("androidx.navigation.safeargs")
 }
 
 android {
-    namespace = "com.example.appvelocidademedia"
+    namespace = "com.example.exame"
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId = "com.example.appvelocidademedia"
+        applicationId = "com.example.exame"
         minSdk = 24
         targetSdk = 36
         versionCode = 1
