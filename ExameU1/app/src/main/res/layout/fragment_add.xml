@@ -1,44 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:padding="24dp"
+    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:gravity="center_horizontal">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/text_initial"
-        android:textSize="24sp"
-        android:textColor="@color/colortext"
-        android:textStyle="bold"/>
+    android:layout_height="match_parent">
 
     <EditText
         android:id="@+id/editConcepto"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="18sp"
-        android:hint="@string/concept"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="wrap_content"/>
 
     <EditText
         android:id="@+id/editCantidade"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/quantity"
-        android:inputType="numberDecimal"
-        android:textSize="18sp"
-        android:layout_marginTop="16dp"/>
+        android:layout_height="wrap_content"/>
 
     <Button
         android:id="@+id/btnGardar"
         android:text="@string/text_save"
-        android:textSize="18sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/background"
         android:layout_marginTop="16dp"/>
 </LinearLayout>
