@@ -9,11 +9,11 @@
     <fragment
         android:id="@+id/addFragment"
         android:name="com.example.exame.AddFragment"
-        android:label="fragment_add"
+        android:label="Engadir gastos"
         tools:layout="@layout/fragment_add" />
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.exame.SummaryFragment"
-        android:label="fragment_summary"
+        android:label="Total gastado"
         tools:layout="@layout/fragment_summary" />
 </navigation>
