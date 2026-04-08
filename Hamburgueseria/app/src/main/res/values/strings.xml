@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Hamburgueseria</string>
+    <string name="text_name">Introduce o teu nome:</string>
+    <string name="burgers">Hamburguesas</string>
+    <string name="complet">Completa 6,5€</string>
+    <string name="vegan">Vegana 7€</string>
+    <string name="withegg">Con ovo 7,5€</string>
+    <string name="drinks">Bebida</string>
+    <string name="water">Auga 1,5€</string>
+    <string name="refresco">Refresco 2€</string>
+    <string name="add">Engadir á conta</string>
+    <string name="hint_name">Nome</string>
+</resources>

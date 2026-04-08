@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/pedidoFragment">
+
+    <fragment
+        android:id="@+id/pedidoFragment"
+        android:name="com.example.hamburgueseria.PedidoFragment"
+        android:label="Pedido"
+        tools:layout="@layout/fragment_pedido" >
+        <action
+            android:id="@+id/action_pedidoFragment_to_resumoFragment"
+            app:destination="@id/resumoFragment" >
+
+            <argument
+                android:name="userName"
+                app:argType="string"/>
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/resumoFragment"
+        android:name="com.example.hamburgueseria.ResumoFragment"
+        android:label="Resumo do pedido"
+        tools:layout="@layout/fragment_resumo" >
+        <argument
+            android:name="userName"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_resumoFragment_to_pedidoFragment"
+            app:destination="@id/pedidoFragment" />
+    </fragment>
+</navigation>
